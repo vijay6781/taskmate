@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% load static %}
+ {% block title %}
+
+<title>Welcome to my page</title>
+
+   {% endblock title %}
+
+   
+ {% block content %}
+   <div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail" >
+          <img src="{% static 'images/Hydrangeas.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption text-center bg-lights">
+           <h5>Credit:<a href="">Vijay kumar</a></h5>
+          </div>
+         
+      </div>
+    </div>
+    
+    
+    <div class="col-md-4">
+      <div class="thumbnail">
+          <img src="{% static 'images/Penguins.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption text-center bg-lights">
+            <h5>Credit:<a href="">Vijay kumar</a></h5>
+          </div>
+         
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+          <img src="{% static 'images/Hydrangeas.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption text-center bg-lights">
+            <h5>Credit:<a href="">karan raj</a></h5>
+          </div>
+         
+      </div>
+    </div>
+               </div>
+       
+  
+   <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail" >
+          <img src="{% static 'images/Desert.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption text-center bg-lights">
+            <h5>Credit:<a href="">karan raj</a></h5>
+          </div>
+         
+      </div>
+    </div>
+    
+    
+    <div class="col-md-4">
+      <div class="thumbnail">
+       
+          <img src="{% static 'images/Tulips.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption text-center bg-lights">
+            <h5>Credit:<a href=""> vijay Kumar</a></h5>
+          </div>
+         
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+          <img src="{% static 'images/Desert.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption text-center bg-light">
+            <h5>Credit:<a href="">karan raj</a></h5>
+          </div>
+         
+      </div>
+    </div>
+               </div>
+
+	  
+	
+ </div>
+ </div>
+ <br>
+ <div class="mb-4">
+ <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-lg btn-primary" >Let's Get Start</button></a></center>
+ 
+ </div>
+   <br>
+  {% endblock content %}
